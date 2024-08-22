@@ -1,0 +1,108 @@
+body {
+    font-family: 'arial', sans-serif; /* fuente de todo el sitio */
+    background-color: #edfaf9; /* color de fondo */
+    margin: 0; /* elimina margenes */
+    padding: 20px; /* padding global */
+    display: flex; /* diseño flexible */
+    flex-direction: column; /* coloca elementos en columna */
+    align-items: center; /* centra los elementos horizontalmente */
+}
+
+h1 {
+    text-align: center; /* centra el texto del titulo */
+    color: #333; /* color gris oscuro */
+    margin-bottom: 20px; /* espacio debajo del titulo */
+}
+
+form {
+    background-color: #ffffff; /* fondo blanco del formulario */
+    padding: 20px; /* espacio dentro del formulario */
+    border-radius: 10px; /* bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra */
+    max-width: 400px; /* ancho maximo */
+    width: 100%; /* ocupar todo el ancho disponible */
+}
+
+label {
+    display: block; /* cada etiqueta en su propia linea */
+    font-weight: bold; /* texto en negrita */
+    color: #333; /* color gris oscuro */
+}
+
+input, select, button {
+    width: calc(100% - 20px); /* ancho ajustado */
+    padding: 5px; /* espaciado interno */
+    border: 1px solid #ddd; /* borde ligero */
+    border-radius: 5px; /* bordes redondeados */
+    outline: none; /* sin borde al hacer clic */
+    font-size: 1rem; /* tamaño de fuente */
+}
+
+input:focus, select:focus {
+    border-color: #0055ff; /* color del borde al enfocar */
+}
+
+button {
+    width: 48%; /* ancho del boton */
+    background-color: #f700ff; /* color de fondo del boton */
+    color: #fff; /* color del texto */
+    border: none; /* sin bordes */
+    cursor: pointer; /* cambiar cursor a pointer */
+    transition: background-color 0.3s ease; /* transicion suave del color */
+}
+
+button:hover {
+    background-color:  #ea00ff; /* color de fondo al pasar el raton */
+}
+
+button#limpiar {
+    background-color: #c01ef6; /* color especifico para boton limpiar */
+}
+
+button#limpiar:hover {
+    background-color: #c01ef6; /* color al pasar raton en limpiar */
+}
+
+table {
+    margin-top: 30px; /* espacio encima de la tabla */
+    width: 100%; /* ancho total de la tabla */
+    border-collapse: collapse; /* colapsa bordes de las celdas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra de la tabla */
+    max-width: 900px; /* ancho maximo de la tabla */
+    margin-top: 50px; /* espacio extra encima de la tabla */
+    border-radius: 10px; /* bordes redondeados */
+    overflow: hidden; /* esconde desbordamientos */
+}
+
+th, td {
+    padding: 12px; /* espacio dentro de celdas */
+    text-align: left; /* texto alineado a la izquierda */
+    border-bottom: 1px solid #ddd; /* borde inferior de celdas */
+    background-color: #fff; /* fondo blanco de celdas */
+}
+
+th {
+    background-color: #0073ff; /* color del encabezado */
+    color: white; /* texto blanco */
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1; /* color al pasar raton en filas */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* borde general de la tabla */
+    border-radius: 5px; /* bordes redondeados en celdas */
+}
+
+#tabla {
+    margin-top: 20px; /* espacio superior para la tabla */
+    max-width: 900px; /* ancho maximo */
+    width: 100%; /* ancho total */
+}
+
+.container {
+    display: flex; /* diseño flexible */
+    flex-direction: column; /* coloca en columna */
+    align-items: center; /* centra los elementos */
+}

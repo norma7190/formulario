@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Formulario de Registro</title> 
+    <link rel="stylesheet" href="CSS/estilo.css"> <!-- vincula el archivo css externo -->
+</head>
+<body>
+    <h1>Registro de Personaaaa</h1> <!-- titulo principal de la pagina -->
+    
+    <form id="formulario"> <!-- inicio del formulario -->
+        <label for="nombre">Nombre:</label> <!-- etiqueta para el campo de nombre -->
+        <input type="text" id="nombre" required><br><br> <!-- campo de texto para nombre, obligatorio -->
+        
+        <label for="apellidos">Apellidos:</label> <!-- etiqueta para el campo de apellidos -->
+        <input type="text" id="apellidos" required><br><br> <!-- campo de texto para apellidos, obligatorio -->
+        
+        <label for="dni">DNI:</label> <!-- etiqueta para el campo de dni -->
+        <input type="text" id="dni" required><br><br> <!-- campo de texto para dni, obligatorio -->
+        
+        <label for="edad">Edad:</label> <!-- etiqueta para el campo de edad -->
+        <input type="number" id="edad" required><br><br> <!-- campo numerico para edad, obligatorio -->
+        
+        <label for="direccion">Dirección:</label> <!-- etiqueta para el campo de direccion -->
+        <input type="text" id="direccion" required><br><br> <!-- campo de texto para direccion, obligatorio -->
+        
+        <label for="correo">Correo:</label> <!-- etiqueta para el campo de correo -->
+        <input type="email" id="correo" required><br><br> <!-- campo para email, obligatorio -->
+        
+        <label>Género:</label> <!-- etiqueta para el genero -->
+        <input type="checkbox" id="genero_m" value="Masculino"> Masculino <!-- casilla de verificacion para masculino -->
+        <input type="checkbox" id="genero_f" value="Femenino"> Femenino<br><br> <!-- casilla de verificacion para femenino -->
+        
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label> <!-- etiqueta para la fecha de nacimiento -->
+        <input type="date" id="fecha_nacimiento" required><br><br> <!-- campo para seleccionar fecha, obligatorio -->
+        
+        <label for="telefono">Teléfono:</label> <!-- etiqueta para el campo de telefono -->
+        <input type="text" id="telefono" required><br><br> <!-- campo de texto para telefono, obligatorio -->
+        
+        <label for="lugar">Lugar:</label> <!-- etiqueta para el campo de lugar -->
+        <select id="lugar" required> <!-- menu desplegable para seleccionar lugar, obligatorio -->
+            <option value="seleccionar">seleccionar</option> <!-- opcion por defecto -->
+            <option value="Amazonas">Amazonas</option>
+            <option value="Áncash">Áncash</option>
+            <option value="Apurímac">Apurímac</option>
+            <option value="Arequipa">Arequipa</option>
+            <option value="Ayacucho">Ayacucho</option>
+            <option value="Cajamarca">Cajamarca</option>
+            <option value="Callao">Callao</option>
+            <option value="Cusco">Cusco</option>
+            <option value="Huancavelica">Huancavelica</option>
+            <option value="Huánuco">Huánuco</option>
+            <option value="Ica">Ica</option>
+            <option value="Junín">Junín</option>
+            <option value="La Libertad">La Libertad</option>
+            <option value="Lambayeque">Lambayeque</option>
+            <option value="Lima">Lima</option>
+            <option value="Loreto">Loreto</option>
+            <option value="Madre de Dios">Madre de Dios</option>
+            <option value="Moquegua">Moquegua</option>
+            <option value="Pasco">Pasco</option>
+            <option value="Piura">Piura</option>
+            <option value="Puno">Puno</option>
+            <option value="San Martín">San Martín</option>
+            <option value="Tacna">Tacna</option>
+            <option value="Tumbes">Tumbes</option>
+            <option value="Ucayali">Ucayali</option>
+        </select><br><br> <!-- fin del menu desplegable -->
+        
+        <button type="button" id="mostrar">Mostrar Datos</button> <!-- boton para mostrar los datos -->
+        <button type="button" id="limpiar">Limpiar</button> <!-- boton para limpiar el formulario -->
+    </form>
+
+    <h2>Datos de la Persona</h2> <!-- subtitulo para la tabla de datos -->
+    <table id="tabla" border="1"> <!-- inicio de la tabla con borde -->
+        <thead> <!-- cabecera de la tabla -->
+            <tr> <!-- fila de la cabecera -->
+                <th>Nombre</th> <!-- encabezado de la columna para nombre -->
+                <th>Apellidos</th> <!-- encabezado de la columna para apellidos -->
+                <th>DNI</th> <!-- encabezado de la columna para dni -->
+                <th>Edad</th> <!-- encabezado de la columna para edad -->
+                <th>Dirección</th> <!-- encabezado de la columna para direccion -->
+                <th>Correo</th> <!-- encabezado de la columna para correo -->
+                <th>Género</th> <!-- encabezado de la columna para genero -->
+                <th>Fecha de Nacimiento</th> <!-- encabezado de la columna para fecha de nacimiento -->
+                <th>Teléfono</th> <!-- encabezado de la columna para telefono -->
+                <th>Lugar</th> <!-- encabezado de la columna para lugar -->
+            </tr>
+        </thead>
+        <tbody id="tabla_body"></tbody> <!-- cuerpo de la tabla donde se agregaran las filas dinamicamente -->
+    </table>
+
+    <script src="js/javas.js"></script> <!-- enlace al archivo js externo -->
+</body>
+</html>
